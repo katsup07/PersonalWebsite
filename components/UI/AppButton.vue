@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .button {
   font: inherit;
-  background-color: black;
+  background-color: rgb(35, 35, 35);
   color: white;
   padding: 5px;
   cursor: pointer;
@@ -31,7 +31,7 @@ export default {
 
 .button:hover,
 .button:active {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(66, 66, 66);
   border: 1px solid black;
 }
 
@@ -49,7 +49,7 @@ export default {
 }
 
 .cancel {
-  background-color: red;
+  background-color: rgb(214, 104, 104);
   color: white;
   border: 1px solid transparent;
 }

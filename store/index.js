@@ -10,16 +10,23 @@ const Posts =[
   {
     id: "work-history",
     isAdmin: "isAdmin",
-    thumbnail: "./assets/images/mobo.jpg",
+    thumbnail: "./assets/images/history.jpg",
     title: "Work History",
     previewText: "Previous and current duties",
   },
   {
-    id: "formal-learning",
+    id: "education",
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/coding.jpg",
-    title: "Formal Learning",
-    previewText: "Educational background",
+    title: "Education History",
+    previewText: "Formal learning",
+  },
+  {
+    id: "Language-abilities",
+    isAdmin: "isAdmin",
+    thumbnail: "./assets/images/language.jpg",
+    title: "Language Levels",
+    previewText: "English and Japanese",
   },
   {
     id: "underlying-code",
@@ -58,15 +65,16 @@ const Posts =[
   },
 ];
 
-const comments = [{author: 'Luke', title: 'Test', content: 'Testing testing 1,2,3.'}];
+const tempComments = [{author: 'Luke', title: 'Test', email: "luke@bear.com", content: 'Testing testing 1,2,3.'}];
 
 
 export default () =>
   new Vuex.Store({
     state: () => ({
-      isAuth: false,
+      // isAuth: true,
+      webToken: true,
       posts: Posts || [],
-      comments: comments || [],
+      comments: tempComments || [],
     }),
     getters,
     mutations,

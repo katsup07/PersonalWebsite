@@ -1,12 +1,9 @@
 <template>
   <div>
-    <div class="admin-new-post-page" v-if="$store.getters.isAuth">
+    <div class="admin-new-post-page">
       <section class="new-post-form">
         <AdminPostForm />
       </section>
-    </div>
-    <div class="admin-new-post-page" v-if="!$store.getters.isAuth">
-      <p>Only administrators may post on this website.</p>
     </div>
   </div>
 </template>

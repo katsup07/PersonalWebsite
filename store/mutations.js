@@ -1,12 +1,22 @@
 export default  {
-  toggleAuth(state) {
-    console.log("mutating toggleAuth()...");
-    state.isAuth = !state.isAuth;
+  // setAuth(state, value) {
+  //   console.log("mutating toggleAuth()...", value);
+  //   state.isAuth = value;
+  // },
+  
+  setWebToken(state, value){
+    console.log("mutating setWebToken()...", value);
+    state.webToken = value;
   },
 
-  createComment(state, payload){
-    console.log('current comments: ' + state.comments[0].content, state.comments.length);
-    console.log('mutating via createComment()', payload);
-    state.comments.push(payload);
+  createMessage(state, comments){
+    console.log('mutating via createMessage()', comments);
+    state.comments.push(comments);
+    console.log(state.comments);
+  },
+
+  setMessages(state, comments){
+    const newComments = [...comments];
+    state.comments = newComments;
   }
 };

@@ -11,8 +11,9 @@
           <li class="nav-item"><nuxt-link to="/about">AboutMe</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/posts">Topics</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/admin" v-if="this.$store.getters.isAuth">Admin</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/admin/auth" v-if="!this.$store.getters.isAuth">Login</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/admin" v-if="isAuth">Admin</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/admin/auth" v-if="!isAuth">Login</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/admin/messages" v-if="isAuth">Messages</nuxt-link></li>
         </ul>
       </div>
     </header>
@@ -27,6 +28,12 @@ export default {
   components: {
     TheSideNavToggle,
   },
+  computed: {
+    isAuth(){
+      console.log('isAuth() in TheHeader: ', this.$store.getters.getWebToken);
+      return !!this.$store.getters.getWebToken;
+    }
+  }
 };
 </script>
 
@@ -91,6 +98,6 @@ export default {
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: red;
+  color: rgb(194, 105, 105);
 }
 </style>

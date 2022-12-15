@@ -2,6 +2,8 @@
   <div class="input-control">
     <label><slot /></label>
     <input
+      minlength="3"
+      maxlength="500"
       v-if="controlType === 'input'"
       v-bind="$attrs"
       :value="value"
@@ -9,6 +11,8 @@
     <textarea
       v-if="controlType === 'textarea'"
       rows="10"
+      minlength="3"
+      maxlength="500"
       :value="value"
       @input="$emit('input', $event.target.value)"></textarea>
   </div>

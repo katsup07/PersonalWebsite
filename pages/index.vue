@@ -8,7 +8,7 @@
         <h2>Site Navigation</h2>
         <img class="compass-icon" src="~static/assets/icons/compass-regular.svg" alt="compass icon"/>
       </div>
-      <p>This site contains information about my background and personal interests. Click the AboutMe link above in the navigation bar to get a general overview. After that proceed to the topics section for further details. If you have any questions, please feel free to contact me. Thank-you for visiting!</p>
+      <p>This site contains information about my background and personal interests. The AboutMe link above in the navigation bar provides a general overview and the topics section has further details. If you have any questions, please feel free to contact me. Thank-you for visiting!</p>
     </section>
     <div class="posts">
       <PostPreview
@@ -88,7 +88,6 @@ p{
   background-image: url("/assets/images/smart-phone.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 0.2rem;
   margin: 0;
 }
 
@@ -100,11 +99,10 @@ p{
   left: 5%;
   width: 90%;
   color: rgb(32, 32, 32);
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: rgba(97, 221, 99, 0.695);
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0.3rem 0.3rem 0.5rem 0.01rem rgb(177, 177, 177);
+  border-radius: 0.25rem;
   box-sizing: border-box;
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="about-page">
-      <h1>About Me</h1>   <img src="~static/assets/images/cable-car2.jpg"/>
+      <h1>About Me</h1>   <img src="~static/assets/images/cable-car2.jpg" alt="a picture of me"/>
       <p>I grew up in Canada and lived in Toronto until finishing highschool. I then moved to Vancouver and attended the <a href="https://www.ubc.ca/">University of British Columbia</a>, where I completed undergraduate studies in mathematics. Since then, I have been living and working as a teacher/coordinator in Japan for the past 13 years.</p>
       <h2 class="category">Interests</h2>
       <p>Watching movies, cooking, puzzles and problem solving of all forms, tinkering with computer hardware and software, building and creating things, reading about health/psychology/science/tech/engineering, watching youtube, playing video games, and bicycle riding.</p>

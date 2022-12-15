@@ -2,18 +2,18 @@
   <div>
     <div class="admin-new-post-page">
       <section class="new-post-form">
-        <AdminPostForm />
+        <ContactForm/>
       </section>
     </div>
   </div>
 </template>
 
 <script>
-import AdminPostForm from "../../../components/admin/AdminPostForm.vue";
+import ContactForm from "../../../components/admin/ContactForm.vue";
 export default {
-  layout: "admin",
+  layout: "default",
   components: {
-    AdminPostForm,
+    ContactForm,
   },
 };
 </script>

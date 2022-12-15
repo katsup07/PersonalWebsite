@@ -1,13 +1,15 @@
 <template>
   <div>
+    <h1>Contact Form</h1>
+    <p>Please fill in your information below.</p>
     <form @submit.prevent="onSave">
       <AppControlInput v-model="editedComment.author" >Name</AppControlInput>
-      <AppControlInput v-model="editedComment.title">Title</AppControlInput>
       <AppControlInput v-model="editedComment.email">Email</AppControlInput>
+      <AppControlInput v-model="editedComment.title">Title</AppControlInput>
       <AppControlInput control-type="textarea" v-model="editedComment.content"
         >Content</AppControlInput
       >
-      <AppButton type="submit">Save</AppButton>
+      <AppButton :class="'confirm'" type="submit">Save</AppButton>
       <AppButton
         type="button"
         style="margin-left: 10px"
@@ -50,8 +52,13 @@ export default {
   methods: {
     onSave() {
       console.log("saving comment...", this.editedComment);
-      this.$store.dispatch('createMessage', this.editedComment);
-      this.$router.push("/posts");
+      const result = this.$store.dispatch('createMessage', this.editedComment);
+      if(result !== false){
+      alert('Message successfully sent.')
+      return this.$router.push("/posts");
+      }
+
+      alert('Something went wrong... please try again or send an email instead.')
     },
     onCancel() {
       this.editedComment.author = "";

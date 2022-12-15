@@ -47,14 +47,14 @@ const Posts =[
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/pc.jpg",
     title: "Inspiration",
-    previewText: "Life in pictures",
+    previewText: "Life in pictures from pexels.com",
   },
   {
     id: "dreams",
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/dreamy.jpg",
-    title: "Dreams",
-    previewText: "Future aspirations and ambitions",
+    title: "Future Dreams",
+    previewText: "Ambitions and goals",
   },
   {
     id: "lifestyle",
@@ -65,14 +65,14 @@ const Posts =[
   },
 ];
 
-const tempComments = [{author: 'Luke', title: 'Test', email: "luke@bear.com", content: 'Testing testing 1,2,3.'}];
+const tempComments = [{author: 'Luke', title: 'Temp comment', email: "luke@bear.com", content: 'Testing, testing 1,2,3.'}];
 
 
 export default () =>
   new Vuex.Store({
     state: () => ({
       // isAuth: true,
-      webToken: true,
+      webToken: null,
       posts: Posts || [],
       comments: tempComments || [],
     }),

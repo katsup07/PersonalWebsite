@@ -48,15 +48,15 @@ export default {
   border: 1px solid transparent;
 }
 
-.cancel {
-  background-color: rgb(214, 104, 104);
+.confirm {
+  background-color: rgb(46, 176, 228);
   color: white;
   border: 1px solid transparent;
 }
 
-.cancel:hover,
-.cancel:active {
-  background-color: salmon;
+.confirm:hover,
+.confirm:active {
+  background-color: rgb(114, 250, 164);
   border: 1px solid transparent;
   color: white;
 }

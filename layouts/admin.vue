@@ -12,6 +12,11 @@ export default{
   components:{
     TheHeader,
     TheSidenav,
+  },
+  data(){
+    return{
+      displaySidenav: false,
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <header class="the-header">
+    <header class="the-header nav-list">
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">Worksplorer</nuxt-link>
@@ -11,8 +11,8 @@
           <li class="nav-item"><nuxt-link to="/about">AboutMe</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/posts">Topics</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/admin" v-if="isAuth">Admin</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/admin/auth" v-if="!isAuth">Login</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/admin/auth" v-if="isAuth">Logout</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/admin/messages" v-if="isAuth">Messages</nuxt-link></li>
         </ul>
       </div>
@@ -98,6 +98,6 @@ export default {
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: rgb(194, 105, 105);
+  color: rgb(243, 123, 123);
 }
 </style>

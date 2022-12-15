@@ -7,7 +7,7 @@
         <div class="field"><span class="field-title">Email</span>: abc@domain.com</div>
         <div class="field"><span class="field-title">Phone</span>: 123-4567</div>
         <p>Alternatively, you can also send me a message directly here via the following form.</p>
-          <AppButton @click="$router.push('/admin/new-post')"
+          <AppButton @click="$router.push('/admin/contact-form')"
             >Send Message</AppButton
           >
        
@@ -35,6 +35,7 @@ section {
 
   padding: 0.7rem;
   background: url("~/static/assets/images/contact.jpg");
+   background-size: cover;
   height: 100vh;
 }
 

@@ -1,17 +1,17 @@
 <template>
   <div class="admin-post-page">
     <section class="update-form">
-      <AdminPostForm :post="loadedPost" />
+      <ContactForm :post="loadedPost" />
     </section>
   </div>
 </template>
 <script>
-import AdminPostForm from "../../../components/admin/AdminPostForm.vue";
+import ContactForm from "../../../components/admin/ContactForm.vue";
 
 export default {
   layout: "admin",
   components: {
-    AdminPostForm,
+    ContactForm,
   },
   data() {
     return {

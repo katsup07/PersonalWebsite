@@ -2,6 +2,14 @@
   <div class="container">
     <div class="about-page">
       <h1>About Me</h1>   <img src="~static/assets/images/cable-car2.jpg" alt="a picture of me"/>
+      <ul>
+        <li><span class="field">Name:</span> Brett</li>
+        <li><span class="field">Nationality:</span> Canadian</li>
+        <li><span class="field">Japanese Residence Status:</span> Permanent Resident</li>
+        <li><span class="field">Current Residence:</span> Kawasaki, near Musashikosugi Station</li>
+        <div class="note">(Partial details are listed above for privacy reasons. Full details can be provided on request.)</div>
+      </ul>
+      <h2>Background</h2>
       <p>I grew up in Canada and lived in Toronto until finishing highschool. I then moved to Vancouver and attended the <a href="https://www.ubc.ca/">University of British Columbia</a>, where I completed undergraduate studies in mathematics. Since then, I have been living and working as a teacher/curriculum-coordinator in Japan for the past 13 years.</p>
       <h2 class="category">Interests</h2>
       <p>Watching movies, cooking, puzzles and problem solving of all forms, tinkering with computer hardware and software, building and creating things, reading about health/psychology/science/tech/engineering, watching youtube, playing video games, and bicycle riding.</p>
@@ -24,17 +32,32 @@ img{
   border-radius: 5rem;
   border: 0.01rem solid rgb(215, 215, 215);
 }
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+li{
+  list-style: none;
+}
 h1{
   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
 }
 p, h1{
   margin:0;
-  margin-bottom: 0.1rem;
 }
 h2{
   margin-bottom: 0;
 }
 
+.field{
+  font-weight: 600;
+}
+.note{
+  font-size: 0.5rem;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: flex;
   justify-content: center;

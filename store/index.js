@@ -22,11 +22,11 @@ const Posts =[
     previewText: "Formal learning",
   },
   {
-    id: "Language-abilities",
+    id: "language-abilities",
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/language.jpg",
     title: "Language Levels",
-    previewText: "English and Japanese",
+    previewText: "English / 日本語",
   },
   {
     id: "underlying-code",

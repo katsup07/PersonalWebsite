@@ -21,14 +21,16 @@ section{
 
   h1{
     margin: 0;
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.743);
+   text-align: center;
+   font-size: 1.75rem;
+   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
   }
 
   .info-container{
     box-shadow: 0 1.5px 1.5px rgb(59, 59, 59);
-    border-radius: 0.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem double rgb(35, 35, 35);
     background-color: white;
     min-width: 40%;
     padding: 1rem;

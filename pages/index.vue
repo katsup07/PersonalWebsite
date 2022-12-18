@@ -8,7 +8,7 @@
         <h2>Site Navigation</h2>
         <img class="compass-icon" src="~static/assets/icons/compass-regular.svg" alt="compass icon"/>
       </div>
-      <p>This site contains information about my background and personal interests. The AboutMe link above in the navigation bar provides a general overview and the topics section has further details. If you have any questions, please feel free to contact me. Thank-you for visiting!</p>
+      <p>This site contains information about my background and personal interests. The AboutMe link above in the navigation bar provides a general overview, while the topics section has further details. If you have any questions, please feel free to contact me. Thank-you for visiting!</p>
     </section>
     <div class="posts">
       <PostPreview
@@ -105,6 +105,8 @@ p{
   border-radius: 0.25rem;
   box-sizing: border-box;
 }
+
+
 
 @media (max-width: 500px) {
   .intro h1, h2 {

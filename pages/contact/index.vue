@@ -55,7 +55,9 @@ h1 {
 
 .contact-info-container {
   box-shadow: 0 1.5px 1.5px rgb(59, 59, 59);
-  border-radius: 0.3rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0.1rem double rgb(35, 35, 35);
   background-color: white;
   min-width: 40%;
   padding: 1rem;

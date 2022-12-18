@@ -3,17 +3,24 @@
     <h1>Education Background</h1>
     <section>
       <h2>Mathematics Degree</h2>
-      <p><span class="field">Type:</span> Four year bachelors degree</p>
-      <p><span class="field">Location:</span> The University of British Columbia in Vancouver Canada</p>
-      <p><span class="field">Courses</span>: Calculus(many), differential equations, partial differential equations, linear algebra, logic and proofs, discrete mathematics, probability, complex variables, linear programming, applied complex analysis, coding theory and cryptography, and euclidean geometry from <a href="https://www.math.ubc.ca/">mathematics department</a>. Various science, programming, Chinese, Japanese, and English courses were also part of the degree</p>
+      <ul>
+        <li><span class="field">Type:</span> Four year bachelors degree
+        <li><span class="field">Standing:</span> First Class with an overall A- average</li>
+        <li><span class="field">Courses</span>: Calculus(many), differential equations, partial differential equations, linear algebra, logic and proofs, discrete mathematics, probability, complex variables, linear programming, applied complex analysis, coding theory and cryptography, and euclidean geometry. Various science, programming, Chinese, Japanese, and English courses were also part of the degree</li>
+        <li><span class="field">Location:</span> <a href="https://www.ubc.ca/">The University of British Columbia</a> in Vancouver Canada</li>
+        <li><span class="field">Department: </span><a href="https://www.math.ubc.ca/">Mathematics</a></li>
+        <li><span class="field">Membership: </span>A member of <a href="https://goldenkey.org/about/">Golden Key Honours Society</a></li>
+      </ul>
       </section>
       <section>
       <h2>Programming</h2>
-      <p><a href="https://www.cs.ubc.ca/~tmm/courses/cpsc111-06-spr/courseinfo.html">Computer Science 111</a> - Introduction to Computation with Java.</p>
-      <p><a href="https://www.cs.ubc.ca/~gabrielm/211/courseInformation.html">Computer Science 211</a> - Introduction to Software Development with Java.</p>
-      <p><a href="https://codewithmosh.com/">Code with Mosh</a> - I learned data Structures, design patterns, clean code writing, refactoring, git, and also an introduction to test driven development. Video lessons are taught by a professional software engineer with 20+ years of experience, 43 courses, and 10+ million students.</p>
-      <p><a href="https://www.theodinproject.com/">The Odin Project</a> A free, full stack, project based learning curriculum that is supported by an open source community.</p>
-      <p><a href="https://www.udemy.com/">Udemy</a> - Various courses about Javascript and its frameworks, such as React, Vue, Next.js, Nuxt.js, and Node.js.</p>
+      <ul>
+        <li><a href="https://www.cs.ubc.ca/~tmm/courses/cpsc111-06-spr/courseinfo.html">Computer Science 111</a> - Introduction to Computation with Java.</li>
+        <li><a href="https://www.cs.ubc.ca/~gabrielm/211/courseInformation.html">Computer Science 211</a> - Introduction to Software Development with Java.</li>
+        <li><a href="https://codewithmosh.com/">Code with Mosh</a> - Learned data Structures, design patterns, clean code writing, refactoring, git, and also an introduction to test driven development. Video lessons are taught by a professional software engineer with 20+ years of experience, 43 courses, and 10+ million students.</li>
+        <li><a href="https://www.theodinproject.com/">The Odin Project</a> A free, full stack, project based learning curriculum that is supported by an open source community.</li>
+        <li><a href="https://www.udemy.com/">Udemy</a> - Various courses about Javascript and its frameworks, such as React, Vue, Next.js, Nuxt.js, and Node.js.</li>
+      </ul>
     </section>
   </div>
 </template>
@@ -23,18 +30,22 @@ h1{
   font-size: 1.9rem;
   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
 }
-h2, p{
+h2{
   margin: 0;
   margin-bottom:0.3rem;
 }
-
+ul{
+  margin: 0;
+  padding-left: 1.3rem;
+}
+li{
+  list-style: square;
+  margin-left: 0;
+}
 section{
   margin-bottom: 1rem;
 }
 
-section{
-  margin-bottom: 1.5rem;
-}
 
 img{
   max-width: 7rem;

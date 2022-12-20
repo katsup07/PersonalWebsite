@@ -3,7 +3,7 @@
     <section>
      <div class="info-container">
         <h1>Future Dreams</h1>
-        <p>These past 15 years I have enjoyed teaching students and learning to be a teacher, but I feel I am ready for a change and different types of challenges. I enjoy designing, and creating things, along with the types of problem solving involved in mathematics and creating applications, so I think it would be good fit for me to work as a programmer. I hope I can learn more about the thought processes and various methodologies for building, updating, and maintaining programs, along weight all the nitty gritty work that comes with that. There is a lot to learn, but it's the type of growth and development I am looking for, so I would like to give it a try and see. If we don't try new things and follow our interests, we will never what could have been.</p>   
+        <p>Over the past 15 years, I have enjoyed teaching students and learning to be a teacher, but I am ready for a change and to take on new challenges. I enjoy designing and creating things, and mathematical/computational problem solving, so it would be good fit for me to work as a programmer. I hope I can learn more about the thought processes and various methodologies for building, updating, and maintaining programs, along with all the nitty gritty work that comes with that. There is a lot to learn, but it's the type of growth and development I am looking for.</p>   
       </div>
     </section>
   

@@ -2,7 +2,10 @@
   <div>
     <section>
       <div class="contact-info-container">
-        <h1>Contact</h1>
+        <div class="heading-and-icon">
+          <h1>Contact</h1>
+          <img class="envelope-icon" src="~/static/assets/icons/envelope-icon.svg"/>
+        </div>
         <div class="field"><span class="field-title">Name</span>: Brett</div>
         <div class="field"><span class="field-title">Email</span>: abc@domain.com</div>
         <div class="field"><span class="field-title">Phone</span>: 123-4567</div>
@@ -68,5 +71,16 @@ h1 {
 
 .field {
   font-size: 1rem;
+}
+
+.envelope-icon{
+  max-width: 2rem;
+  border: 0px;
+}
+
+.heading-and-icon{
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="content-container">
-      <h1>Work History</h1>
+        <h1>Work History <img class="building-icon" src="~/static/assets/icons/briefcase-icon.svg"/></h1>
       <section>
       <h2><a  href="https://laurus-school.com/"> Laurus International School of Science - Tokyo</a></h2>
       <div><span class="field">Years:</span> 2016 - Present</div>
@@ -123,6 +123,10 @@ margin-left: 1rem;
  margin: 0.5rem;
  padding: 0.5rem;
  border: 0.1rem double rgb(35, 35, 35);
+}
+
+.building-icon{
+  max-width: 2rem;
 }
 
 @media (max-width: 1200px) {

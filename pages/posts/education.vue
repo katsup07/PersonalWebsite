@@ -1,10 +1,10 @@
 <template>
   <div class="content-container">
-    <h1>Education Background</h1>
+    <h1>Education History <img class="school-icon" src="~/static/assets/icons/school-icon.svg"/></h1>
     <section>
       <h2>Mathematics Degree</h2>
       <ul>
-        <li><span class="field">Type:</span> Four year bachelors degree
+        <li><span class="field">Type:</span> 4 year bachelors degree
         <li><span class="field">Standing:</span> First Class with an overall A- average</li>
         <li><span class="field">Courses</span>: Calculus(many), differential equations, partial differential equations, linear algebra, logic and proofs, discrete mathematics, probability, complex variables, linear programming, applied complex analysis, coding theory and cryptography, and euclidean geometry. Various science, programming, Chinese, Japanese, and English courses were also part of the degree</li>
         <li><span class="field">Location:</span> <a href="https://www.ubc.ca/">The University of British Columbia</a> in Vancouver Canada</li>
@@ -24,6 +24,7 @@
     </section>
   </div>
 </template>
+
 <style scoped>
 h1{
   text-align: center;
@@ -56,6 +57,11 @@ img{
 margin: 0.5rem;
 padding: 0.5rem;
 border: 0.1rem double rgb(35, 35, 35);
+}
+
+.school-icon{
+  max-width: 2.3rem;
+  border: none;
 }
 
 .field{

@@ -2,13 +2,22 @@
   <div class="header-container">
     <header class="the-header nav-list">
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
+ 
       <div class="logo">
-        <nuxt-link to="/">Worksplorer</nuxt-link>
+        <nuxt-link to="/">
+          <span class="logo-and-icon-container">
+             <span class="logo-title">Worksplorer</span><img class="building-icon" src="~/static/assets/icons/building-icon.svg"/>
+           </span>
+        </nuxt-link>
       </div>
       <div class="spacer"></div>
       <div class="navigation-items">
         <ul class="nav-list">
-          <li class="nav-item"><nuxt-link to="/about">AboutMe</nuxt-link></li>
+          <li class="nav-item">
+            <nuxt-link to="/about">
+              <span class="about-me-and-icon-container"><img class="contact-icon" src="~/static/assets/icons/about-icon.svg"/>AboutMe</span>
+            </nuxt-link>
+          </li>
           <li class="nav-item"><nuxt-link to="/posts">Topics</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/admin/auth" v-if="!isAuth">Login</nuxt-link></li>
@@ -55,9 +64,13 @@ export default {
   padding: 0 20px;
 }
 
+.logo-and-icon-container{
+  display: flex;
+}
+
 .logo {
   margin: 0 10px;
-  font-size: 1.3rem;
+  font-size: 1.36rem;
 }
 
 .logo a {
@@ -65,6 +78,29 @@ export default {
   color: white;
 }
 
+.logo-title{
+  margin-right: 0.4rem;
+}
+
+.building-icon{
+  background: white;
+  border-radius: 2rem;
+  max-width: 1.4rem;
+}
+
+.about-me-and-icon-container{
+  display: flex;
+  margin-right: 1.4rem;
+}
+
+.contact-icon{
+  border-radius: 2rem;
+  background: white;
+  max-height: 1.3rem;
+  margin-top: 0.05rem;
+  margin-right: 0.4rem;
+  
+}
 .spacer {
   flex: 1;
 }
@@ -100,4 +136,5 @@ export default {
 .nav-item a.nuxt-link-active {
   color: rgb(243, 123, 123);
 }
+
 </style>

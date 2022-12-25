@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <h1>Language Abilities</h1>
+    <h1>Language Abilities<img class="language-icon" src="~/static/assets/icons/language-solid-icon.svg"/></h1>
     <section>
       <h2>English - Fluent</h2>
       <ul>
@@ -47,6 +47,12 @@ section{
 img{
   max-width: 7rem;
   border: 0.01rem solid rgb(210, 210, 210);
+}
+
+img.language-icon{
+  max-width: 3rem;
+  margin-left: 0.5rem;
+  border: none;
 }
 
 li{

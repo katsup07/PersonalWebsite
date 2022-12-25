@@ -17,8 +17,8 @@
       <ul>
         <li><a href="https://www.cs.ubc.ca/~tmm/courses/cpsc111-06-spr/courseinfo.html">Computer Science 111</a> - Introduction to Computation with Java.</li>
         <li><a href="https://www.cs.ubc.ca/~gabrielm/211/courseInformation.html">Computer Science 211</a> - Introduction to Software Development with Java.</li>
-        <li><a href="https://codewithmosh.com/">Code with Mosh</a> - Learned data Structures, design patterns, clean code writing, refactoring, git, and also an introduction to test driven development. Video lessons are taught by a professional software engineer with 20+ years of experience, 43 courses, and 10+ million students.</li>
-        <li><a href="https://www.theodinproject.com/">The Odin Project</a> A free, full stack, project based learning curriculum that is supported by an open source community.</li>
+        <li><a href="https://codewithmosh.com/">Code with Mosh</a> - Data Structures, design patterns, clean code writing, refactoring, git, and also an introduction to test driven development. Video lessons are taught by a professional software engineer with 20+ years of experience, 43 courses, and 10+ million students.</li>
+        <li><a href="https://www.theodinproject.com/"> - The Odin Project</a> A free, full stack, project based learning curriculum that is supported by an open source community.</li>
         <li><a href="https://www.udemy.com/">Udemy</a> - Various courses about Javascript and its frameworks, such as React, Vue, Next.js, Nuxt.js, and Node.js.</li>
       </ul>
     </section>
@@ -50,7 +50,6 @@ section{
 
 img{
   max-width: 7rem;
-  border: 0.01rem solid rgb(210, 210, 210);
 }
 
 .content-container{

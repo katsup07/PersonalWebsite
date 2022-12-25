@@ -29,6 +29,13 @@ const Posts =[
     previewText: "English / 日本語",
   },
   {
+    id: "technologies",
+    isAdmin: "isAdmin",
+    thumbnail: "./assets/images/lights-on-book.jpg",
+    title: "Technologies",
+    previewText: "Programming related tools",
+  },
+  {
     id: "underlying-code",
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/about-site.jpg",

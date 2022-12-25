@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <h1>Favorite Youtube Channels</h1>
+    <h1>Favorite Youtube Channels<img class="youtube-icon" src="~/static/assets/icons/youtube-icon.svg"/></h1>
     <section>
       <h2>Science and Engineering</h2>
       <img src="~/static/assets/images/microscope.jpg" alt="microscope looking at leaf"/>
@@ -61,6 +61,12 @@ section{
 img{
   max-width: 7rem;
   border: 0.01rem solid rgb(210, 210, 210);
+}
+
+img.youtube-icon{
+  max-width: 3rem;
+  margin-left: 0.5rem;
+  border: none;
 }
 
 .content-container{

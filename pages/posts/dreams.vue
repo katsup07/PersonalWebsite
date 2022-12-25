@@ -2,8 +2,8 @@
   
     <section>
      <div class="info-container">
-        <h1>Future Dreams</h1>
-        <p>Over the past 15 years, I have enjoyed teaching students and learning to be a teacher, but I am ready for a change and to take on new challenges. I enjoy designing and creating things, and mathematical/computational problem solving, so it would be good fit for me to work as a programmer. I hope I can learn more about the thought processes and various methodologies for building, updating, and maintaining programs, along with all the nitty gritty work that comes with that. There is a lot to learn, but it's the type of growth and development I am looking for.</p>   
+        <h1>Future Dreams<img class="cloud-moon-icon" src="~/static/assets/icons/cloud-moon-icon.svg"/></h1>
+        <p>Over the past 15 years, I have enjoyed teaching students and learning to be a teacher, but I am ready for a change and to take on new challenges. I enjoy designing and creating things, and mathematical/computational problem solving, so it would be good fit for me to work as a programmer. I hope I can learn more about the thought processes and various methodologies for building and maintaining programs.</p>   
       </div>
     </section>
   
@@ -29,6 +29,12 @@ h1 {
   text-align: center;
   font-size: 1.9rem;
   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
+}
+
+  img.cloud-moon-icon{
+  max-width: 2.7rem;
+  border: 0.01rem solid rgb(255, 255, 255);
+  margin-left: 0.4rem;
 }
 
 .info-container {

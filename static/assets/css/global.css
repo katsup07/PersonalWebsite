@@ -1,6 +1,7 @@
 html{
   font-family: "Noto Sans", sans-serif, "Noto Serif", serif;
   box-sizing: border-box;
+  transition: all 0.25s;
 }
 
 *, *:before, *:after{

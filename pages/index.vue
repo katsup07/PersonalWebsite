@@ -57,6 +57,7 @@ h2{
 p{
  font-size: 0.85rem;
 }
+
 .nav-header-and-compass{
   display: flex;
 }
@@ -101,8 +102,9 @@ p{
   color: rgb(32, 32, 32);
   font-size: 2rem;
   background-color: rgba(97, 221, 99, 0.695);
-  padding: 10px;
+  padding: 0.5rem;
   border-radius: 0.25rem;
+  border: 0.1px solid rgba(83, 176, 84, 0.695);
   box-sizing: border-box;
 }
 

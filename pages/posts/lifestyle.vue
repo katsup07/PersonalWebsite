@@ -2,7 +2,7 @@
 
     <section>
       <div class="content-container">
-      <h1>Lifestyle</h1>
+      <h1>Lifestyle<img class="heart-icon" src="~/static/assets/icons/heart-icon.svg"/></h1>
         <ul>
           <li>Activities: Bicycle riding everywhere and working out regularly</li>
           <li>Diet: A balanced diet of mostly fruits, vegetables, meat, fish, nuts, beans, eggs, milk, water, and other natural foods, with almost no extra salt, sugar, bread or processed foods added. The exception being when out with friends or workmates for dinner etc.</li>
@@ -15,7 +15,7 @@
 <style scoped>
 h1{
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
   margin-top: 0;
 }
@@ -47,6 +47,12 @@ section {
 img{
   max-width: 7rem;
   border: 0.01rem solid rgb(210, 210, 210);
+}
+
+  img.heart-icon{
+  max-width: 1.8rem;
+  border: 0.01rem solid rgb(255, 255, 255);
+  margin-left: 0.4rem;
 }
 
 .content-container{

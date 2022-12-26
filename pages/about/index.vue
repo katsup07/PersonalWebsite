@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="about-page">
-      <h1>About Me</h1>   <img src="~static/assets/images/cable-car2.jpg" alt="a picture of me"/>
+      <h1 class="about-me">About Me</h1>   <img src="~static/assets/images/cable-car2.jpg" alt="a picture of me"/>
       <ul class="personal-info">
         <li><span class="field">Name:</span> Brett</li>
         <li><span class="field">Nationality:</span> Canadian</li>
@@ -98,7 +98,10 @@ h2{
   p, li {
     font-size: 0.8rem;
   }
-  h1, h2{
+  h1.about-me{
+    font-size: 1.2rem;
+  }
+  h2{
     margin:0;
     padding:0;
     font-size: 1rem;

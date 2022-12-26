@@ -9,7 +9,7 @@
       <AppControlInput control-type="textarea" v-model="editedComment.content"
         >Content</AppControlInput
       >
-      <AppButton :class="'confirm'" type="submit">Save</AppButton>
+      <AppButton :class="'confirm'" type="submit">Send</AppButton>
       <AppButton
         type="button"
         style="margin-left: 10px"
@@ -18,18 +18,26 @@
         >Cancel</AppButton
       >
     </form>
+    <InfoAlert v-if="showAlertMessage">
+      {{alertMessage}}
+      <div v-if="error">
+        <AppButton @click="onCloseInfoAlert">Confirm</AppButton>
+      </div>
+    </InfoAlert>
   </div>
 </template>
 <script>
 import AppButton from "../UI/AppButton.vue";
 import AppControlInput from "../UI/AppControlInput.vue";
 import MessagesViewer from "../MessagesViewer.vue";
+import InfoAlert from '../InfoAlert.vue';
 
 export default {
   components: {
     AppButton,
     AppControlInput,
     MessagesViewer,
+    InfoAlert,
   },
   props: {
     post: {
@@ -47,19 +55,35 @@ export default {
             email: "",
             content: "",
           },
+          showAlertMessage: false,
+          alertMessage: "Message sent. Redirecting back to home page...", 
+          error: false,
     };
   },
   methods: {
     onSave() {
+      this.error = false;
       console.log("saving comment...", this.editedComment);
       const result = this.$store.dispatch('createMessage', this.editedComment);
-      if(result !== false){
-      alert('Message successfully sent.')
-      return this.$router.push("/posts");
-      }
 
-      alert('Something went wrong... please try again or send an email instead.')
+      if(result !== false){
+        this.showAlertMessage = true;
+        setTimeout( () => {
+          this.$router.push("/posts");
+        }, 3000)
+        return
+      }
+      result === false
+      this.error = true;
+      this.showAlertMessage = true;
+      this.alertMessage = 'Something went wrong... Please try again or send an email instead.';
     },
+
+    onCloseInfoAlert(){
+      this.error = false;
+      this.showAlertMessage = false;
+    },
+
     onCancel() {
       this.editedComment.author = "";
       this.editedComment.title = "";
@@ -71,3 +95,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+form{
+  margin-bottom: 1rem;
+}
+</style>

@@ -33,7 +33,7 @@ const Posts =[
     isAdmin: "isAdmin",
     thumbnail: "./assets/images/lights-on-book.jpg",
     title: "Technologies",
-    previewText: "Programming related tools",
+    previewText: "Programming tools I've used",
   },
   {
     id: "underlying-code",

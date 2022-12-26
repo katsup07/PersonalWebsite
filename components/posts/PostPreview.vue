@@ -80,6 +80,6 @@ a {
 
 a:hover .post-content,
 a:active .post-content {
-  background-color: rgba(125, 225, 126, 0.749);
+  background-color: rgba(113, 224, 159, 0.749);
 }
 </style>

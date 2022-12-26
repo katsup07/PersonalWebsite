@@ -71,6 +71,10 @@ section{
    text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
   }
 
+  h2{
+    margin:0.3rem;
+  }
+
   img.microchip-icon{
   max-width: 2rem;
   border: 0.01rem solid rgb(255, 255, 255);

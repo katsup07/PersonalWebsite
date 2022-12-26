@@ -115,7 +115,9 @@ margin-left: 1rem;
 .habits-of-mind img:hover{
   width: 40rem;
   cursor: zoom-in;
+  transition: all 0.5s;
 }
+
 .field{
   font-weight: 600;
 }

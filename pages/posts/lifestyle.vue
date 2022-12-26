@@ -4,9 +4,9 @@
       <div class="content-container">
       <h1>Lifestyle<img class="heart-icon" src="~/static/assets/icons/heart-icon.svg"/></h1>
         <ul>
-          <li>Activities: Bicycle riding everywhere and working out regularly</li>
-          <li>Diet: A balanced diet of mostly fruits, vegetables, meat, fish, nuts, beans, eggs, milk, water, and other natural foods, with almost no extra salt, sugar, bread or processed foods added. The exception being when out with friends or workmates for dinner etc.</li>
-          <li>Sleep: A regular sleep pattern of sleeping and waking around the same time each day.</li>
+          <li>Activities: Bicycle riding, working out, and plenty of exercise</li>
+          <li>Diet: A balanced diet of mostly fruits, vegetables, meat, fish etc. and other natural foods</li>
+          <li>Sleep: A regular sleep pattern</li>
         </ul>
       </div>
     </section>

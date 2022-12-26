@@ -6,7 +6,7 @@
       <div class="logo">
         <nuxt-link to="/">
           <span class="logo-and-icon-container">
-             <span class="logo-title">Worksplorer</span><img class="building-icon" src="~/static/assets/icons/building-icon.svg"/>
+             <span class="logo-title">Home</span><img class="building-icon" src="~/static/assets/icons/building-icon.svg"/>
            </span>
         </nuxt-link>
       </div>

@@ -101,7 +101,7 @@ p{
   width: 90%;
   color: rgb(32, 32, 32);
   font-size: 2rem;
-  background-color: rgba(97, 221, 99, 0.695);
+  background-color: rgba(113, 224, 159, 0.749);
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 0.1px solid rgba(83, 176, 84, 0.695);

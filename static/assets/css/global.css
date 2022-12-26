@@ -1,7 +1,6 @@
 html{
   font-family: "Noto Sans", sans-serif, "Noto Serif", serif;
   box-sizing: border-box;
-  transition: all 0.25s;
 }
 
 *, *:before, *:after{
@@ -11,7 +10,6 @@ html{
 body {
   margin: 0;
   padding: 0;
-
 }
 
 a{
@@ -21,5 +19,23 @@ a{
 }
 
 a:hover, a:active{
-  color: rgba(112, 202, 114, 0.749)
+  color: rgba(113, 224, 159, 0.749);
 }
+
+a, div, button{
+  transition: all 0.2s;
+}
+
+@media (max-width: 600px) {
+  div, p, img{
+    font-size: 0.6rem;
+  }
+
+  h2, h2 a{
+    font-size: 0.7rem;
+  }
+
+  h1{
+    font-size: 0.9rem;
+  }
+ }

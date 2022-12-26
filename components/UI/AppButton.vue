@@ -25,8 +25,10 @@ export default {
   background-color: rgb(35, 35, 35);
   color: white;
   padding: 5px;
+  margin-top: 0.1rem;
   cursor: pointer;
   border: 1px solid black;
+  border-radius: 0.1rem;
 }
 
 .button:hover,

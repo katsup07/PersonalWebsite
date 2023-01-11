@@ -17,7 +17,7 @@ export async function getCommentsFromDatabase() {
 }
 
 export async function signUserInOrUp(mode, emailAndPasswordData) {
-  console.log(url, 'entering into signUserInOrUp');
+  console.log(url, 'entering into signUserInOrUp()');
   const url =
     mode === "sign up"
       ? "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8"
@@ -32,7 +32,7 @@ export async function signUserInOrUp(mode, emailAndPasswordData) {
       const data = await response.json();
       // TODO - add proper error handling.
       if(!response.ok){
-        console.log('Something went wrong when authenticating users email or password', response);
+        console.log('Something went wrong when authenticating user\'s email or password', response);
       }
 
       console.log(data);

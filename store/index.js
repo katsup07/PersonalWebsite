@@ -6,7 +6,7 @@ import actions from "./actions.js";
 
 Vue.use(Vuex);
 
-const Posts =[
+const posts =[
   {
     id: "work-history",
     isAdmin: "isAdmin",
@@ -80,7 +80,7 @@ export default () =>
     state: () => ({
       // isAuth: true,
       webToken: null,
-      posts: Posts || [],
+      posts: posts || [],
       comments: tempComments || [],
     }),
     getters,

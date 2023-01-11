@@ -59,13 +59,6 @@ a {
   color: black;
 }
 
-@media (min-width: 850px) {
-  .post-preview {
-    width: 400px;
-    margin: 10px;
-  }
-}
-
 .post-thumbnail {
   width: 100%;
   height: 200px;
@@ -81,5 +74,32 @@ a {
 a:hover .post-content,
 a:active .post-content {
   background-color: rgba(113, 224, 159, 0.749);
+}
+
+@media (min-width: 850px) {
+  .post-preview {
+    width: 400px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .post-thumbnail{
+    max-height: 6rem;
+  }
+  .post-preview {
+    max-width: 10rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 250px) {
+  .post-thumbnail{
+    max-height: 5rem;
+  }
+  .post-preview {
+    max-width: 8rem;
+    margin: 10px;
+  }
 }
 </style>

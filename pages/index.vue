@@ -60,6 +60,8 @@ p{
 
 .nav-header-and-compass{
   display: flex;
+  background: rgba(113, 224, 159, 0.726);
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 .compass-icon{
   max-width: 1.5rem;
@@ -76,9 +78,8 @@ p{
 .mission-statement{
   margin: 1rem;
    box-shadow: 0.1rem 0.1rem 0.2rem 0.01rem rgb(211, 211, 211);
-   border: 1px solid rgb(226, 226, 226);
+   border: 0.1px solid rgb(226, 226, 226);
    border-radius: 0rem;
-   background-color: rgb(242, 242, 242);
 }
 
 .intro {
@@ -96,22 +97,27 @@ p{
   text-align: center;
   font-weight: 900;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 5%;
   width: 90%;
-  color: rgb(32, 32, 32);
-  font-size: 2rem;
-  background-color: rgba(113, 224, 159, 0.749);
+  color:  rgba(255, 255, 255, 0.827);
+  text-shadow: 1px 1px 1px rgb(111, 111, 111);
+  font-size: 3rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 0.1px solid rgba(83, 176, 84, 0.695);
   box-sizing: border-box;
 }
 
 
 
 @media (max-width: 500px) {
-  .intro h1, h2 {
+  .intro{
+    height: 200px;
+  }
+  .intro h1{
+    font-size: 2rem;
+  }
+   h2 {
     font-size: 1rem;
   }
 
@@ -124,7 +130,10 @@ p{
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
+  .intro h1{
+    font-size: 1.5rem;
+  }
   h2{
     font-size: 0.75rem;
     margin: 0;

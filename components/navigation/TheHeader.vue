@@ -6,7 +6,7 @@
       <div class="logo">
         <nuxt-link to="/">
           <span class="logo-and-icon-container">
-             <span class="logo-title">Home</span><img class="building-icon" src="~/static/assets/icons/building-icon.svg"/>
+             <span class="logo-title">Home</span><img class="home-icon" src="~/static/assets/icons/home-icon.svg"/>
            </span>
         </nuxt-link>
       </div>
@@ -59,6 +59,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(33, 31, 31);
+  border-bottom:1px solid rgba(113, 224, 159, 0.749);
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;
@@ -82,10 +83,13 @@ export default {
   margin-right: 0.4rem;
 }
 
-.building-icon{
+.home-icon{
   background: white;
-  border-radius: 2rem;
-  max-width: 1.4rem;
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin-top: 0.2rem;
 }
 
 .about-me-and-icon-container{
@@ -94,12 +98,12 @@ export default {
 }
 
 .contact-icon{
-  border-radius: 2rem;
+  border-radius: 0.6rem;
   background: white;
-  max-height: 1.3rem;
+  max-height: 1.4rem;
   margin-top: 0.05rem;
   margin-right: 0.4rem;
-  
+  border: 0.1px solid black;
 }
 .spacer {
   flex: 1;

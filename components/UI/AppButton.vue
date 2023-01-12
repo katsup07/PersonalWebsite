@@ -27,14 +27,13 @@ export default {
   padding: 5px;
   margin-top: 0.1rem;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid rgba(113, 224, 159, 0.749);
   border-radius: 0.1rem;
 }
 
 .button:hover,
 .button:active {
   background-color: rgb(66, 66, 66);
-  border: 1px solid black;
 }
 
 .inverted {
@@ -53,13 +52,12 @@ export default {
 .confirm {
   background-color: rgb(46, 176, 228);
   color: white;
-  border: 1px solid transparent;
+  border: 1px solid rgba(113, 224, 159, 0.749);
 }
 
 .confirm:hover,
 .confirm:active {
-  background-color: rgb(114, 250, 164);
-  border: 1px solid transparent;
+  background-color: rgba(46, 176, 228, 0.767);
   color: white;
 }
 </style>

@@ -6,7 +6,7 @@
 <ul>
   <li>HTML</li>
   <li>CSS</li>
-  <li>Vanilla Javascript</li>
+  <li>Javascript</li>
   <li>React.js</li>
   <li>Redux</li>
   <li>Next.js</li>
@@ -24,8 +24,8 @@
   <li>Github</li>
   <li>MongoDB</li>
   <li>Firebase</li>
-  <li>Npm</li>
-  <li>Jest</li>
+  <li>Jest / Vitest</li>
+  <li>NPM</li>
   <br>
   <li>Windows</li>
   <li>Linux</li>
@@ -33,7 +33,6 @@
   <br>
   <li>VSCode</li>
   <li>Intellij</li>
-  <li>MySql Workbench</li>
   <br>
   <li>Chrome / Firefox and their dev tools</li>
   <li>G-suite - google docs, sheets, slides, drive etc.</li>
@@ -42,9 +41,10 @@
   <li>iMovie</li>
   <li>OBS</li>
 </ul>
-<h2>Currently Learning</h2>
+<h2 class="learning">Currently Learning</h2>
 <li>C++</li>
 <li>Python</li>
+<li>Typescript</li>
 <li>mySql</li>
 <li>Angular</li>
 <li>SASS</li>
@@ -101,5 +101,9 @@ p{
     background-color: white;
     min-width: 40%;
     padding: 1rem;
+  }
+
+  .learning{
+    color: rgb(255, 0, 64);
   }
 </style>

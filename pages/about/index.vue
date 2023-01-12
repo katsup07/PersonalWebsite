@@ -20,9 +20,9 @@
       </ul>
       <h2>Github</h2>
       <ul>
-        <li>My <a href="https://github.com/katsup07">github</a> account with all the projects I've been working on over the past year</li>
-        <li>The ReadMe instructions have all the details for installing the dependencies and running the scripts.</li> 
-        <li>API keys are included for the time being to make it easy for anyone to view and try out the entire apps without having to configure much.</li>
+        <li>Here is my <a href="https://github.com/katsup07">github</a> account with all the projects I've been working on over the past year</li>
+        <li>The ReadMe instructions have all the details for installing the dependencies and running the scripts</li> 
+        <li>API keys are included for the time being to make it easy for anyone to view and try out the entire apps without having to configure much</li>
         <li>Feel free to test out the applications, find bugs, create and delete data, users, etc.</li> 
         <li>All applications are works in progress</li>
       </ul>

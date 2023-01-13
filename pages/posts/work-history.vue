@@ -57,12 +57,12 @@
       </div>
       </section>
       <section>
-      <h2><a href="https://www-city-osaka-lg-jp.j-server.com/LUCOSAKAC/ns/tl.cgi/https%3a//www.city.osaka.lg.jp/kyoiku/index.html?SLANG=ja&TLANG=en&XMODE=0&XCHARSET=utf-8&XJSID=0"> Osaka Board of Education - Osaka</a></h2>
+      <h2><a href="https://www.city.osaka.lg.jp/contents/wdu020/kyoiku/english/index.html"> Osaka Board of Education - Osaka</a></h2>
       <div><span class="field">Years:</span> 2013 to 2016</div>
       <div><span class="field">Position:</span> Osaka City Native English Teacher(C-NET)</div>
       <h3>Responsibilities</h3>
        <ul>
-        <li>Planed, prepared and conducted English lessons in primary school English classes</li>
+        <li>Planned, prepared and conducted English lessons in primary school English classes</li>
         <li>Assisted and team taught English lessons in junior high school English classes</li>
         <li>Aided in marking junior-high-school tests</li>
         <li>Administered English speaking and listening tests</li>

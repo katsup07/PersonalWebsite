@@ -7,8 +7,8 @@
           <img class="envelope-icon" src="~/static/assets/icons/envelope-icon.svg"/>
         </div>
         <div class="field"><span class="field-title">Name</span>: Brett</div>
-        <div class="field"><span class="field-title">Email</span>: abc@domain.com</div>
-        <div class="field"><span class="field-title">Phone</span>: 123-4567</div>
+        <div class="field"><span class="field-title">Email</span>: brett_7y7@yahoo.ca</div>
+        <div class="field"><span class="field-title">Phone</span>: 080-4048-0976</div>
         <p>Alternatively, you can also send me a message directly here via the following form.</p>
           <AppButton @click="$router.push('/admin/contact-form')"
             >Send Message</AppButton

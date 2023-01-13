@@ -30,8 +30,8 @@
       <ul>
         <li>Easily approachable, strong interpersonal skills, and able to work together as part of a diverse team</li>
         <li>Open to change, highly adaptable, and able to remain calm and relaxed, even in tense situations</li>
-        <li>Self motivated, highly focused, and able to work for long hours on a task or switch between various tasks at a time</li>
-        <li>Able to easily learn from others, learn from mistakes, and seek out solutions</li>
+        <li>Self motivated, highly focused, and capable of working for long hours on a task or switching between various tasks at a time</li>
+        <li>Able to learn from others, learn from mistakes, and seek out solutions to problems</li>
         <li>Eager to take on new challenges and develop new skills</li>
       </ul>
     </div>

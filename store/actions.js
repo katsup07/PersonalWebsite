@@ -9,19 +9,16 @@ export default {
 
   async createMessage(context, message) {
     console.log("creating message...", message);
-    // backend tasks...
     try{
     const response = await fetch('https://worksplore-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json', {
       method: 'POST',
-      body: JSON.stringify(message
-  ),
+      body: JSON.stringify(message),
     });
 
     const responseData = await response.json();
     if(!response.ok){
-      // TODO add error handling
       console.log('Something went wrong when creating message...', response);
-      return false;
+      throw responseData;
     }
     
     message.id = responseData.name;
@@ -30,7 +27,7 @@ export default {
     return true;
   } catch(error){
      console.log(error);
-     return false;
+     throw error;
   }
     
   },

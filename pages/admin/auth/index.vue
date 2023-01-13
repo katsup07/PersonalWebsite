@@ -13,6 +13,14 @@
           @click="isSignedUp = !isSignedUp">Switch to {{ isSignedUp ? 'sign up' : 'login' }}</AppButton>
       </form>
     </div>
+      <div class="alert-container">
+        <InfoAlert v-if="showAlertMessage">
+        {{alertMessage}}
+        <div v-if="error">
+          <AppButton @click="onCloseInfoAlert">Close</AppButton>
+        </div>
+            </InfoAlert>
+      </div>
     <div class="login-container" v-if="isAuth">
       <h1>Logout</h1>
       <div class="logout-btn">
@@ -25,6 +33,7 @@
 <script>
 import AppControlInput from '@/components/UI/AppControlInput'
 import AppButton from '@/components/UI/AppButton'
+import InfoAlert from '@/components/InfoAlert.vue';
 import { signUserInOrUp } from '@/util/helpers.js'
 
 export default {
@@ -39,6 +48,9 @@ export default {
       isSignedUp: !this.isAuth,
       enteredEmail: '',
       enteredPassword: '',
+      showAlertMessage: false,
+      alertMessage: 'Error - something went wrong',
+      error: false,
     }
   },
   computed:{
@@ -53,17 +65,30 @@ export default {
       console.log(this.enteredEmail, this.enteredPassword);
       const mode = this.isSignedUp ? 'login' : 'sign up';
       const emailData = {email: this.enteredEmail, password: this.enteredPassword};
-      const webToken = await signUserInOrUp(mode, emailData)
+      try{
+      const webToken = await signUserInOrUp(mode, emailData);
        if(!!webToken){
           this.$store.dispatch('setWebToken', webToken);
           return this.$router.push('/admin/messages');
        }
        this.$router.push('/error');
+      } catch({error}){
+        console.log('ooops an error occured', error.message);
+        this.showAlertMessage = true;
+        this.error = true;
+        this.alertMessage = 'Error: ' + error.message;
+      }
     },
     
     logoutHandler(){
       console.log('calling logoutHandler()...');
       this.$store.dispatch('setWebToken', '');
+    },
+
+    onCloseInfoAlert(){
+      this.error = false;
+      this.showAlertMessage = false;
+      this.alertMessage = '';
     }
   }
 }

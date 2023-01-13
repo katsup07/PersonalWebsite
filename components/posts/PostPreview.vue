@@ -76,9 +76,9 @@ a:active .post-content {
   background-color: rgba(113, 224, 159, 0.749);
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1px) {
   .post-preview {
-    width: 400px;
+    max-width: 400px;
     margin: 10px;
   }
 }

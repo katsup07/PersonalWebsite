@@ -1,11 +1,12 @@
 export async function getCommentsFromDatabase() {
+  try{
   const response = await fetch(
     "https://worksplore-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json"
   );
   const commentsData = await response.json();
   if (!response.ok) {
     // TODO add error handling
-    return console.log("Something went wrong when getting comments", response);
+    throw data;
   }
 
   const comments = [];
@@ -14,6 +15,9 @@ export async function getCommentsFromDatabase() {
   }
   console.log("getCommentsFromDatabase(): ", comments);
   return comments;
+} catch(err){
+  console.log('Error in getCommentsFromDatabase(): ', err);
+}
 }
 
 export async function signUserInOrUp(mode, emailAndPasswordData) {
@@ -23,6 +27,7 @@ export async function signUserInOrUp(mode, emailAndPasswordData) {
       ? "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8"
       : "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8";
 
+      try{
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify(emailAndPasswordData),
@@ -32,9 +37,13 @@ export async function signUserInOrUp(mode, emailAndPasswordData) {
       const data = await response.json();
       // TODO - add proper error handling.
       if(!response.ok){
-        console.log('Something went wrong when authenticating user\'s email or password', response);
+        throw data;
       }
 
-      console.log(data);
+      console.log('data: ', data);
       return data.idToken;
+    } catch(err){
+      console.log('Something went wrong when authenticating user\'s email or password in signUserInOrUp(): ', err);
+      throw err;
+    }
 }

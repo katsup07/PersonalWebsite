@@ -21,7 +21,7 @@
     <InfoAlert v-if="showAlertMessage">
       {{alertMessage}}
       <div v-if="error">
-        <AppButton @click="onCloseInfoAlert">Confirm</AppButton>
+        <AppButton @click="onCloseInfoAlert">Close</AppButton>
       </div>
     </InfoAlert>
   </div>
@@ -61,22 +61,22 @@ export default {
     };
   },
   methods: {
-    onSave() {
+    async onSave() {
       this.error = false;
       console.log("saving comment...", this.editedComment);
-      const result = this.$store.dispatch('createMessage', this.editedComment);
-
-      if(result !== false){
+      try{
+        await this.$store.dispatch('createMessage', this.editedComment);
+ 
         this.showAlertMessage = true;
         setTimeout( () => {
           this.$router.push("/posts");
         }, 3000)
-        return
-      }
-      result === false
+
+      } catch({error}){
       this.error = true;
       this.showAlertMessage = true;
-      this.alertMessage = 'Something went wrong... Please try again or send an email instead.';
+      this.alertMessage = 'Oops something went wrong. Please try again later or send an email instead. Error message: ' + error;
+      }
     },
 
     onCloseInfoAlert(){

@@ -1,14 +1,9 @@
 export default {
-  // setAuth(context, value) {
-  //   console.log("committing toggleAuth()...");
-  //   context.commit("setAuth", value);
-  // },
   setWebToken(context, value){
     context.commit('setWebToken', value);
   },
 
   async createMessage(context, message) {
-    console.log("creating message...", message);
     try{
     const response = await fetch('https://worksplore-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json', {
       method: 'POST',
@@ -22,14 +17,12 @@ export default {
     }
     
     message.id = responseData.name;
-    console.log('message in createMessage() action: ', message);
     context.commit("createMessage", message);
     return true;
   } catch(error){
      console.log(error);
      throw error;
-  }
-    
+    }
   },
 
   setMessages(context, messages){

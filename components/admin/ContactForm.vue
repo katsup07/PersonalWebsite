@@ -63,7 +63,6 @@ export default {
   methods: {
     async onSave() {
       this.error = false;
-      console.log("saving comment...", this.editedComment);
       try{
         await this.$store.dispatch('createMessage', this.editedComment);
  
@@ -90,7 +89,7 @@ export default {
       this.editedComment.email = "";
       this.editedComment.content = "";
 
-      this.$router.push("/admin");
+      this.$router.push("/contact");
     },
   },
 };

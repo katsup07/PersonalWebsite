@@ -25,13 +25,11 @@ export default {
   },
   computed: {
     comments() {
-      console.log(this.$store.getters.getComments);
       return this.$store.getters.getComments;
     },
   },
   async beforeCreate() {
     const messages = await getCommentsFromDatabase();
-    console.log("beforeCreate()... messages:", messages);
     this.$store.dispatch("setMessages", messages);
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav"/>
+    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
     <Nuxt />
   </div>
 </template>
@@ -8,17 +8,17 @@
 <script>
 import TheHeader from "../components/navigation/TheHeader";
 import TheSidenav from "../components/navigation/TheSidenav";
-export default{
-  components:{
+export default {
+  components: {
     TheHeader,
     TheSidenav,
   },
-  data(){
-    return{
+  data() {
+    return {
       displaySidenav: false,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="about-page">
-      <h1 class="about-me">About Me</h1>   <img src="~static/assets/images/cable-car2.jpg" alt="a picture of me"/>
+      <h1 class="about-me">About Me</h1>   <img src="~static/assets/images/interview2.jpg" alt="a picture of me"/>
       <ul class="personal-info">
         <li><span class="field">Name:</span> Brett</li>
         <li><span class="field">Nationality:</span> Canadian</li>

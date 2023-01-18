@@ -39,7 +39,6 @@ export default {
   },
   computed: {
     isAuth(){
-      console.log('isAuth() in TheHeader: ', this.$store.getters.getWebToken);
       return !!this.$store.getters.getWebToken;
     }
   }

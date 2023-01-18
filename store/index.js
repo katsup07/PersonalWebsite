@@ -78,8 +78,7 @@ const tempComments = [{author: 'Luke', title: 'Temp comment', email: "luke@bear.
 export default () =>
   new Vuex.Store({
     state: () => ({
-      // isAuth: true,
-      webToken: null,
+      webToken: null, // isAuth
       posts: posts || [],
       comments: tempComments || [],
     }),

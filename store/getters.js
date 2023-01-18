@@ -1,6 +1,5 @@
 export default {
   isAuth(state) {
-    console.log("getting isAuth...");
     return state.isAuth;
   },
 
@@ -15,11 +14,4 @@ export default {
   getPosts(state) {
     return state.posts;
   }
-
-//   -NJESeikKwg9c_eYfonM:{}
-// author: "Test"
-// content: "Does this work?"
-// email: "luke@bear.com"
-// title: "This is a test"
-// }
 };

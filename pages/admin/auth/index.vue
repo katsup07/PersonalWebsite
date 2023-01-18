@@ -33,7 +33,6 @@
 <script>
 import AppControlInput from '@/components/UI/AppControlInput'
 import AppButton from '@/components/UI/AppButton'
-import InfoAlert from '@/components/InfoAlert.vue';
 import { signUserInOrUp } from '@/util/helpers.js'
 
 export default {
@@ -55,14 +54,11 @@ export default {
   },
   computed:{
     isAuth(){
-      console.log('isAuth() in auth page', !!this.$store.getters.getWebToken, this.$store.getters.getWebToken);
       return !!this.$store.getters.getWebToken;
     }
   },
   methods:{
     async loginHandler(){
-      console.log('calling loginHandler()...');
-      console.log(this.enteredEmail, this.enteredPassword);
       const mode = this.isSignedUp ? 'login' : 'sign up';
       const emailData = {email: this.enteredEmail, password: this.enteredPassword};
       try{
@@ -81,7 +77,6 @@ export default {
     },
     
     logoutHandler(){
-      console.log('calling logoutHandler()...');
       this.$store.dispatch('setWebToken', '');
     },
 

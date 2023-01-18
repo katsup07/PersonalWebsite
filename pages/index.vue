@@ -33,7 +33,6 @@ export default {
   },
   computed: {
   posts() {
-    console.log(this.$store.getters.getPosts.length);
     return this.$store.getters.getPosts;
   },
   }

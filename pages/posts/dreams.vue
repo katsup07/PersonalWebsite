@@ -3,7 +3,7 @@
     <section>
      <div class="info-container">
         <h1>Future Dreams<img class="cloud-moon-icon" src="~/static/assets/icons/cloud-moon-icon.svg"/></h1>
-        <p>Over the past 15 years, I have enjoyed teaching students and learning what it means to be a teacher. However, I feel it is time for new challenges and to work in a different field. I enjoy designing and creating things, and love mathematical/logical problem solving, so I feel it would be good fit for me to work as a programmer. I hope to learn more about the thought processes and various methodologies for planning, building, and maintaining programs.</p>   
+        <p>Over the past 13 years, I have enjoyed teaching students and learning what it means to be a teacher. However, I feel it is time for new challenges and to work in a different field. I enjoy designing and creating things, and love mathematical/logical problem solving, so I feel it would be good fit for me to work as a programmer. I hope to learn more about the thought processes and various methodologies for planning, building, and maintaining programs.</p>   
       </div>
     </section>
   

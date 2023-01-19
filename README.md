@@ -1,4 +1,4 @@
-# blog-project
+# blog-projec
 
 ## Build Setup
 

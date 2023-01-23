@@ -68,7 +68,7 @@ export default {
  
         this.showAlertMessage = true;
         setTimeout( () => {
-          this.$router.push("/posts");
+          this.$router.push("/");
         }, 3000)
 
       } catch({error}){

@@ -12,14 +12,14 @@
     <section>
       <h2>Japanese - <a href="https://www.jlpt.jp/e/about/levelsummary.html">JLPT N2 Level</a></h2>
       <ul>
-        <li><span class="field">Reading - N1/N2</span> -  Able to read and understand sentences at an N2 Level and about 75% of sentences at the N1 level. </li>
-        <li><span class="field">Speaking / Listening N2/N3</span> - Able to speak and converse using everyday Japanese. I understand most daily conversations, most anime on Netflix, but the news is very challenging. Some topics I understand and some I don't.</li>
+        <li><span class="field">Reading - N1/N2</span> -  Able to read and understand sentences at an N2 Level and about 80% of sentences at the N1 level. </li>
+        <li><span class="field">Speaking / Listening N2/N3</span> - Able to speak and converse using everyday Japanese. I understand most daily conversations, most anime on Netflix, but the news can be very challenging. Some topics I understand and some I don't.</li>
         <li><span class="field">Writing / Typing - N2/N3</span></li>
       </ul>
       <h2>日本語 - <a href="https://www.jlpt.jp/e/about/levelsummary.html">日本語能力試験 N2 レベル</a></h2>
       <ul>
-        <li><span class="field">読む力 - N1/N2</span> - N2レベルの文章は難しくないと思いますが、N1は大体75%くらい分かります。 </li>
-        <li><span class="field">話す力/ 聞く力 N2/N3</span> - 話す力は日常会話なら、大丈夫です。聞く力は日常会話、ネットフリックスのアニメ等はだいたい分かります。でも、テレビのニュースは難しいです。聞き取れる時がありますが、話題が詳しくない時は余り理解できません。</li>
+        <li><span class="field">読む力 - N1/N2</span> - N2レベルの文章は理解できますが、N1は８０%くらい理解できます。 </li>
+        <li><span class="field">話す力/ 聞く力 N2/N3</span> - 話す力は日常会話なら、出来ます。聞く力は日常会話、ネットフリックスのアニメ等はだいたい理解できます。でも、テレビのニュースは話題によります。理解できるトピックと理解できないトピックがあります。</li>
         <li><span class="field">書く力 - N2/N3</span></li>
       </ul>
     </section>

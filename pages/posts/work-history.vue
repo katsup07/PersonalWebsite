@@ -30,7 +30,7 @@
         <li>Induct new teachers into the company and ensure a smooth transition into their roles and duties, via on-going training and regular meetings</li>
       </ul>
       <div>
-        <h3>Head Teacher Responsibilities</h3>
+        <h3>Head Teacher Responsibilities:</h3>
       <ul>
         <li>Manage, train, evaluate, and develop new teachers</li>
         <li>Plan and organize school events, trips, and meetings</li>
@@ -45,7 +45,7 @@
       </ul>
       </div>
       </div>
-      <div><h3>Homeroom Teacher Responsibilities</h3>
+      <div><h3>Homeroom Teacher Responsibilities:</h3>
       <ul>
         <li>Plan and conduct lessons in English, math, science, art, social studies, music, PE, <a href="https://www.pblworks.org/what-is-pbl">project based learning</a>, <a href="https://www.britannica.com/video/193418/overview-STEM-education">STEM</a> and <a href="https://www.ictesolutions.com.au/blog/why-schools-should-invest-in-ict/">ICT</a></li>
         <li>Track student progress, mark homework, and adapt to the various learning needs of students</li>

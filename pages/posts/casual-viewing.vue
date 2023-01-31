@@ -53,7 +53,9 @@ p, h2{
   margin: 0rem;
   margin-bottom:0.3rem;
 }
-
+h2{
+   font-size: 1.3rem;
+}
 section{
   margin-bottom: 1.5rem;
 }

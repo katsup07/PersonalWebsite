@@ -62,6 +62,7 @@ p, h1{
   margin:0;
 }
 h2{
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 

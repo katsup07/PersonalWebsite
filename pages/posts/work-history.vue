@@ -2,6 +2,24 @@
     <div class="content-container">
         <h1>Work History <img class="building-icon" src="~/static/assets/icons/briefcase-icon.svg"/></h1>
       <section>
+      <h2>Student - Web Development</h2>
+      <div><span class="field">Years:</span> 2021-Present</div>
+      <div><span class="field">Positions: </span>Frontend Engineer</div>
+      <div><h3>Responsibilities:</h3>
+      <ul>
+        <li>Design, plan, and create frontend of websites</li>
+        <li>Update and improve websites - refactor, separation of concerns, one responsibility principle, clean, easy to understand code etc.</li>
+        <li>Test and debug</li>
+        <li>Connect to backends(Firebase, MongoDB etc.) for storing data and user authentication</li>
+        <li>Use HTML, CSS, and frameworks such as React.js, Next.js, Vue.js, Nuxt.js to create websites with components</li>
+        <li>Use of the Flux Pattern to manage state in a store via Redux or VueX</li>
+        <li>Basic routing, REST APIs, MVC, and responding to requests on a backend using Node.js and Express.js</li>
+        <li>Use of GIT for version control and pushing/pulling data from GitHub</li>
+        <li>Use of command line interfaces for setting up projects, managing and installing dependencies with npm, deploying, GIT etc. </li>
+      </ul>
+      </div>
+      </section>
+      <section>
       <h2><a  href="https://laurus-school.com/"> Laurus International School of Science - Tokyo</a></h2>
       <div><span class="field">Years:</span> 2016 - Present</div>
       <div><span class="field">Positions:</span> Head Teacher/ Curriculum Coordinator / Homeroom Teacher</div>

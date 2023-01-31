@@ -43,7 +43,6 @@
 </ul>
 <h2 class="learning">Currently Learning</h2>
 <li>C++</li>
-<li>Python</li>
 <li>Typescript</li>
 <li>mySql</li>
 <li>Angular</li>

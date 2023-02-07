@@ -7,15 +7,15 @@
       <div><span class="field">Positions: </span>Frontend Engineer</div>
       <div><h3>Responsibilities:</h3>
       <ul>
-        <li>Design, plan, and create frontend of websites</li>
-        <li>Update and improve websites - refactor, separation of concerns, one responsibility principle, clean, easy to understand code etc.</li>
+        <li>Plan, create, and update user interfaces of websites</li>
         <li>Test and debug</li>
-        <li>Connect to backends(Firebase, MongoDB etc.) for storing data and user authentication</li>
+        <li>Connect to Firebase and MongoDB backends for storing data and user authentication</li>
         <li>Use HTML, CSS, and frameworks such as React.js, Next.js, Vue.js, Nuxt.js to create websites with components</li>
         <li>Use of the Flux Pattern to manage state in a store via Redux or VueX</li>
         <li>Basic routing, REST APIs, MVC, and responding to requests on a backend using Node.js and Express.js</li>
         <li>Use of GIT for version control and pushing/pulling data from GitHub</li>
-        <li>Use of command line interfaces for setting up projects, managing and installing dependencies with npm, deploying, GIT etc. </li>
+        <li>Use of command line interfaces for managing projects</li>
+        <li>Refactor, separate concerns, follow single responsibility principle, write clean, easy to understand code etc.</li>
       </ul>
       </div>
       </section>

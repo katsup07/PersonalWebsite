@@ -42,7 +42,6 @@
   <li>OBS</li>
 </ul>
 <h2 class="learning">Currently Learning</h2>
-<li>Typescript</li>
 <li>mySql</li>
 <li>Angular</li>
 <li>SASS</li>

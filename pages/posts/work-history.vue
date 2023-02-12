@@ -3,7 +3,7 @@
         <h1>Work History <img class="building-icon" src="~/static/assets/icons/briefcase-icon.svg"/></h1>
       <section>
       <h2>Student - Web Development</h2>
-      <div><span class="field">Years:</span> 2021-Present</div>
+      <div><span class="field">Years:</span> 2007-2009 & 2021-Present</div>
       <div><span class="field">Positions: </span>Frontend Engineer</div>
       <div><h3>Responsibilities:</h3>
       <ul>
@@ -11,11 +11,11 @@
         <li>Test and debug</li>
         <li>Connect to Firebase and MongoDB backends for storing data and user authentication</li>
         <li>Use HTML, CSS, and frameworks such as React.js, Next.js, Vue.js, Nuxt.js to create websites with components</li>
-        <li>Use of the Flux Pattern to manage state in a store via Redux or VueX</li>
+        <li>Utilizing the Flux Pattern to manage state in a store via Redux or VueX</li>
         <li>Basic routing, REST APIs, MVC, and responding to requests on a backend using Node.js and Express.js</li>
-        <li>Use of GIT for version control and pushing/pulling data from GitHub</li>
-        <li>Use of command line interfaces for managing projects</li>
-        <li>Refactor, separate concerns, follow single responsibility principle, write clean, easy to understand code etc.</li>
+        <li>Use of Git for version control and pushing/pulling data from GitHub</li>
+        <li>Utilizing command line interfaces for managing projects</li>
+        <li>Refactor, separate concerns, follow single responsibility principle, use object oriented programming principles, write clean, easy to understand code etc.</li>
       </ul>
       </div>
       </section>

@@ -19,7 +19,7 @@ section {
   padding: 2rem 4rem;
   background: url("~/static/assets/images/clouds.jpg");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 

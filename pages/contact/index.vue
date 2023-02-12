@@ -38,8 +38,8 @@ section {
 
   padding: 0.7rem;
   background: url("~/static/assets/images/contact.jpg");
-   background-size: cover;
-  height: 100vh;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 img {

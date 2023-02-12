@@ -20,10 +20,6 @@ export default {
       type: String,
       required: true,
     },
-    isAdmin: {
-      type: Boolean,
-     // required: true,
-    },
     title: {
       type: String,
       required: true,
@@ -39,7 +35,7 @@ export default {
   },
   computed: {
     postLink() {
-      return this.isAdmin ? `/admin/${this.id}` : `/posts/${this.id}`;
+      return `/posts/${this.id}`;
     },
   },
 };

@@ -6,9 +6,19 @@
     <section class="mission-statement">
       <div class="nav-header-and-compass">
         <h2>Site Navigation</h2>
-        <img class="compass-icon" src="~static/assets/icons/compass-regular.svg" alt="compass icon"/>
+        <img
+          class="compass-icon"
+          src="~static/assets/icons/compass-regular.svg"
+          alt="compass icon"
+        />
       </div>
-      <p>This site contains information about my background and personal interests. The AboutMe link above in the navigation bar provides a general overview, while the topics section has further details. If you have any questions, please feel free to contact me. Thank-you for visiting!</p>
+      <p>
+        This site contains information about my background and personal
+        interests. The AboutMe link above in the navigation bar provides a
+        general overview, while the topics section has further details. If you
+        have any questions, please feel free to contact me. Thank-you for
+        visiting!
+      </p>
     </section>
     <div class="posts">
       <PostPreview
@@ -27,15 +37,15 @@
 import PostPreview from "../components/posts/PostPreview.vue";
 
 export default {
-  layout: 'default',
+  layout: "default",
   components: {
     PostPreview,
   },
   computed: {
-  posts() {
-    return this.$store.getters.getPosts;
+    posts() {
+      return this.$store.getters.getPosts;
+    },
   },
-  }
 };
 </script>
 
@@ -44,25 +54,26 @@ export default {
   color: rgb(16, 19, 32);
 }
 
-h2, p{
+h2,
+p {
   margin: 0;
   padding: 0.3rem;
 }
-h2{
+h2 {
   font-size: 1.3rem;
   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
 }
 
-p{
- font-size: 0.85rem;
+p {
+  font-size: 0.85rem;
 }
 
-.nav-header-and-compass{
+.nav-header-and-compass {
   display: flex;
   background: rgba(113, 224, 159, 0.726);
   border-bottom: 1px solid rgb(226, 226, 226);
 }
-.compass-icon{
+.compass-icon {
   max-width: 1.5rem;
 }
 .posts {
@@ -74,11 +85,11 @@ p{
   justify-content: center;
 }
 
-.mission-statement{
+.mission-statement {
   margin: 1rem;
-   box-shadow: 0.1rem 0.1rem 0.2rem 0.01rem rgb(211, 211, 211);
-   border: 0.1px solid rgb(226, 226, 226);
-   border-radius: 0rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.01rem rgb(211, 211, 211);
+  border: 0.1px solid rgb(226, 226, 226);
+  border-radius: 0rem;
 }
 
 .intro {
@@ -99,7 +110,7 @@ p{
   top: 5%;
   left: 5%;
   width: 90%;
-  color:  rgba(255, 255, 255, 0.827);
+  color: rgba(255, 255, 255, 0.827);
   text-shadow: 1px 1px 1px rgb(111, 111, 111);
   font-size: 3rem;
   padding: 0.5rem;
@@ -107,38 +118,36 @@ p{
   box-sizing: border-box;
 }
 
-
-
 @media (max-width: 500px) {
-  .intro{
+  .intro {
     height: 200px;
   }
-  .intro h1{
+  .intro h1 {
     font-size: 2rem;
   }
-   h2 {
+  h2 {
     font-size: 1rem;
   }
 
-  p{
+  p {
     font-size: 0.7rem;
   }
 
-  .compass-icon{
+  .compass-icon {
     max-width: 1rem;
   }
 }
 
 @media (max-width: 350px) {
-  .intro h1{
+  .intro h1 {
     font-size: 1.5rem;
   }
-  h2{
+  h2 {
     font-size: 0.75rem;
     margin: 0;
     padding: 0;
   }
-  .compass-icon{
+  .compass-icon {
     display: none;
   }
 }

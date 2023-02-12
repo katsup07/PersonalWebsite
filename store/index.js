@@ -8,50 +8,43 @@ Vue.use(Vuex);
 
 const posts =[
   {
+    id: "portfolio",
+    thumbnail: "./assets/images/about-site.jpg",
+    title: "Portfolio",
+    previewText: "Past and current projects",
+  },
+  {
     id: "work-history",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/history.jpg",
     title: "Work History",
     previewText: "Previous and current duties",
   },
   {
     id: "education",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/coding.jpg",
     title: "Education History",
     previewText: "Formal learning",
   },
   {
     id: "language-abilities",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/language.jpg",
     title: "Language Levels",
     previewText: "English / 日本語",
   },
   {
     id: "technologies",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/lights-on-book.jpg",
     title: "Technologies",
     previewText: "Programming tools I've used",
   },
   {
-    id: "underlying-code",
-    isAdmin: "isAdmin",
-    thumbnail: "./assets/images/about-site.jpg",
-    title: "User Interface",
-    previewText: "Underlying code for this site",
-  },
-  {
     id: "casual-viewing",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/youtube.jpg",
     title: "Favorite Channels",
     previewText: "Insightful Youtube videos",
   },
   {
     id: "inspiration",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/pc.jpg",
     title: "Inspiration",
     previewText: "Life in pictures from pexels.com",
@@ -65,22 +58,21 @@ const posts =[
   },
   {
     id: "lifestyle",
-    isAdmin: "isAdmin",
     thumbnail: "./assets/images/lifestyle2.jpg",
     title: "Lifestyle",
     previewText: "Diet and exercise",
   },
 ];
 
-const tempComments = [{author: 'Luke', title: 'Temp comment', email: "luke@bear.com", content: 'Testing, testing 1,2,3.'}];
+const tempComments = [{author: 'Test', title: 'Temp comment', email: "tester@test.com", content: 'Testing, testing 1,2,3. Either there is a problem with firebase currently or there are no actual comments to display.'}];
 
 
 export default () =>
   new Vuex.Store({
     state: () => ({
-      webToken: null, // isAuth
-      posts: posts || [],
-      comments: tempComments || [],
+      webToken: null, // provides authorization to use admin features when populated with token
+      posts: posts || [], // topic posts from above in this file
+      comments: tempComments || [], // comments from firebase backend
     }),
     getters,
     mutations,

@@ -13,13 +13,13 @@
       <h2>Japanese - <a href="https://www.jlpt.jp/e/about/levelsummary.html">JLPT N2/N3 Level</a></h2>
       <ul>
         <li><span class="field">Reading - N2</span></li>
-        <li><span class="field">Speaking / Listening N2/N3</span> - Able to use everyday Japanese.</li>
+        <li><span class="field">Speaking / Listening N3</span> - Able to use everyday Japanese.</li>
         <li><span class="field">Writing / Typing - N2/N3</span></li>
       </ul>
       <h2>日本語 - <a href="https://www.jlpt.jp/about/levelsummary.html">日本語能力試験 N2/N3 レベル</a></h2>
       <ul>
         <li><span class="field">読む力 - N2</span></li>
-        <li><span class="field">話す力 / 聞く力 N2/N3</span> - 日常会話なら、大体出来ます。</li>
+        <li><span class="field">話す力 / 聞く力 N3</span> - 日常会話レベルです。</li>
         <li><span class="field">書く力 - N2/N3</span></li>
       </ul>
     </section>

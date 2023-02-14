@@ -41,7 +41,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-
+   
+  env: {
+      apiKey: 'AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8',
+    },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static'
 }

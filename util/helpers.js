@@ -18,11 +18,13 @@ export async function getCommentsFromDatabase() {
 }
 }
 
+const fireBaseApiKey = process.env.apiKey;
+
 export async function signUserInOrUp(mode, emailAndPasswordData) {
   const url =
     mode === "sign up"
-      ? "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8"
-      : "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyALrejm9iGxyPeqo0tj_rFhdrdf6kW6dd8";
+      ? `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${fireBaseApiKey}`
+      : `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${fireBaseApiKey}`;
 
       try{
       const response = await fetch(url, {

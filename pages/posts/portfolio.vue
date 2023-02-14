@@ -1,103 +1,153 @@
 <template>
   <section>
     <div class="info-container">
-      <h1>Portfolio<img class="gear-icon" src="~/static/assets/icons/gear-solid-icon.svg"/></h1>
+      <h1>
+        Portfolio<img
+          class="gear-icon"
+          src="~/static/assets/icons/gear-solid-icon.svg"
+        />
+      </h1>
       <table class="table">
-  <thead>
-    <tr class="categories">
-      <th scope="col">Application</th>
-      <th scope="col">Date</th>
-      <th scope="col">GitHub Repository</th>
-      <th scope="col">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><a href="https://worksplore.web.app/">This Webpage</a></th>
-      <td>January 2023</td>
-      <td><a href="https://github.com/katsup07/PersonalWebsite">code</a></td>
-      <td>Made with Nuxt.js and Firebase.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://find-a-coach-f01cc.web.app/coaches">Find a Coach</a></th>
-      <td>October 2022</td>
-      <td><a href="https://github.com/katsup07/find-a-coach">code</a></td>
-      <td>Made with Vue.js and Firebase.</td>
-    </tr>
-    <tr>
-      <th><a href="https://katsup07.github.io/clock/">Analogue Clock</a></th>
-      <td>May 2021</td>
-      <td><a href="https://github.com/katsup07/clock">code</a></td>
-      <td>Use the arrow keys to draw.</td>
-    </tr>
-    <tr>
-      <th><a href="https://katsup07.github.io/checkers/">Checkers</a></th>
-      <td>May 2021</td>
-      <td><a href="https://github.com/katsup07/checkers">code</a></td>
-      <td>Unfinished, but the basic gameplay works.</td>
-    </tr>
-    <tr>
-      <th><a href="https://katsup07.github.io/etch-a-sketch/">Etch a Sketch</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/etch-a-sketch">code</a></td>
-      <td>Use the arrow keys to draw.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/GitHub-User-Info-Search/">GitHub User-Info-Search</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/GitHub-User-Info-Search">code</a></td>
-      <td>Displays publicly available data about users.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/Speech-to-Text/">Speech to Text</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/Speech-to-Text">code</a></td>
-      <td>Uses chrome.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/Adventure-World-Cards/">Adventure World Cards</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/Adventure-World-Cards">code</a></td>
-      <td>Brings pictures on and off the screen.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/Dad-Jokes/">Dad Jokes</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/Dad-Jokes">code</a></td>
-      <td>Fetches from https://icanhazdadjoke.com/api.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/tic-tac-toe/">Tic Tac Toe</a></th>
-      <td>April 2021</td>
-      <td><a href="https://github.com/katsup07/tic-tac-toe">code</a></td>
-      <td>Play against the computer.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/Rainbow-Coloring/">Rainbow Coloring</a></th>
-      <td>March 2021</td>
-      <td><a href="https://github.com/katsup07/Rainbow-Coloring">code</a></td>
-      <td>Left click and hold to draw.</td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/calculator/">Calculator</a></th>
-      <td>March 2021</td>
-      <td><a href="https://github.com/katsup07/calculator">code</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row"><a href="https://katsup07.github.io/Swimming-Fish/">Swimming Fish</a></th>
-      <td>March 2021</td>
-      <td><a href="https://github.com/katsup07/Swimming-Fish">code</a></td>
-      <td>Use the arrow keys to make the fish swim.</td>
-    </tr>
-  </tbody>
-</table>
+        <thead>
+          <tr class="categories">
+            <th scope="col">Application</th>
+            <th scope="col">Date</th>
+            <th scope="col">GitHub Repository</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <TableRow
+            v-for="row in tableRows"
+            :key="row.github"
+            :pageLink="row.pageLink"
+            :appTitle="row.appTitle"
+            :date="row.date"
+            :gitHubLink="row.gitHubLink"
+            :note="row.note"
+          />
+        </tbody>
+      </table>
+      <AppCard>
+        <p>
+          <span class="bold">Note:</span> More React, Vue, Next.js, and Nuxt.js projects can be
+          found on my GitHub account <a href="https://github.com/katsup07">here</a>.
+        </p>
+      </AppCard>
     </div>
   </section>
 </template>
+<script>
+import TableRow from "../../components/TableRow";
+import AppCard from "../../components/UI/AppCard";
+
+export default {
+  components: {
+    TableRow,
+    AppCard,
+  },
+  data() {
+    return {
+      tableRows: [
+        {
+          pageLink: "https://worksplore.web.app/",
+          appTitle: "This Webpage",
+          date: "January 2023",
+          gitHubLink: "https://github.com/katsup07/PersonalWebsite",
+          note: "Made with Nuxt.js and Firebase.",
+        },
+        {
+          pageLink: "https://find-a-coach-f01cc.web.app/coaches",
+          appTitle: "Find a Coach",
+          date: "October 2022",
+          gitHubLink: "https://github.com/katsup07/find-a-coach",
+          note: "Made with Vue.js and Firebase.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/clock/",
+          appTitle: "Analogue Clock",
+          date: "May 2022",
+          gitHubLink: "https://github.com/katsup07/clock",
+          note: "Use the arrow keys to draw.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/checkers/",
+          appTitle: "Checkers",
+          date: "May 2022",
+          gitHubLink: "https://github.com/katsup07/checkers",
+          note: "Click a checkers piece and then an open blue square to move.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/etch-a-sketch/",
+          appTitle: "Etch a Sketch",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/etch-a-sketch",
+          note: "Use the arrow keys to draw.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/GitHub-User-Info-Search/",
+          appTitle: "GitHub User-Info-Search",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/GitHub-User-Info-Search",
+          note: "Displays publicly available data about users.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/Speech-to-Text/",
+          appTitle: "Speech to Text",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/Speech-to-Text",
+          note: "Uses chrome.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/Adventure-World-Cards/",
+          appTitle: "Adventure World Cards",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/Adventure-World-Cards",
+          note: "Brings pictures on and off the screen.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/Dad-Jokes/",
+          appTitle: "Dad Jokes",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/Dad-Jokes",
+          note: "Fetches from https://icanhazdadjoke.com/api.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/tic-tac-toe/",
+          appTitle: "Tic Tac Toe",
+          date: "April 2022",
+          gitHubLink: "https://github.com/katsup07/tic-tac-toe",
+          note: "Play against the computer.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/Rainbow-Coloring/",
+          appTitle: "Finger Painting",
+          date: "March 2022",
+          gitHubLink: "https://github.com/katsup07/Rainbow-Coloring",
+          note: "Left click and hold to draw.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/calculator/",
+          appTitle: "Calculator",
+          date: "March 2022",
+          gitHubLink: "https://github.com/katsup07/calculator",
+          note: "Performs basic calculations.",
+        },
+        {
+          pageLink: "https://katsup07.github.io/Swimming-Fish/",
+          appTitle: "Swimming Fish",
+          date: "March 2022",
+          gitHubLink: "https://github.com/katsup07/Swimming-Fish",
+          note: "Use the arrow keys to make the fish swim.",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style scoped>
-section{
+section {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -106,51 +156,67 @@ section{
   background: url("~/static/assets/images/stationary.jpg");
   background-size: cover;
   min-height: 100vh;
-    }
+}
 
-  h1{
-    margin: 0;
-   text-align: center;
-   font-size: 1.75rem;
-   text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
-  }
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.75rem;
+  text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.743);
+}
 
-  img.gear-icon{
+img.gear-icon {
   max-width: 2rem;
   border: 0.01rem solid rgb(255, 255, 255);
   margin-left: 0.4rem;
 }
 
-table{
+table {
   margin: 0 auto;
 }
 
-hr{
-  width: 100%;
-}
-.categories th{
+.categories th {
   font-size: 1rem;
   font-weight: 900;
-  background-color:  rgba(113, 224, 159, 0.726);
+  background-color: rgba(113, 224, 159, 0.726);
   border-radius: 0.2rem;
 }
-td, th{
+td,
+th {
   padding: 0.7rem;
   font-size: 0.8rem;
 }
 
-tr:nth-child(even), tr:nth-child(even) td, tr:nth-child(even) th{
+tr:nth-child(even),
+tr:nth-child(even) td,
+tr:nth-child(even) th {
   background-color: rgb(222, 222, 222);
   border-radius: 0.2rem;
 }
 
-  .info-container{
-    box-shadow: 0 1.5px 1.5px rgb(59, 59, 59);
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border: 0.1rem double rgb(35, 35, 35);
-    background-color: white;
-    min-width: 40%;
-    padding: 1rem;
+.info-container {
+  box-shadow: 0 1.5px 1.5px rgb(59, 59, 59);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0.1rem double rgb(35, 35, 35);
+  background-color: white;
+  min-width: 40%;
+  padding: 1rem;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+@media screen and (max-width: 800px) {
+  .categories th,
+  td,
+  th, p {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
   }
+}
 </style>

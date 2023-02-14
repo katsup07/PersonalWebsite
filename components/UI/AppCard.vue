@@ -29,5 +29,14 @@
     max-width: 50%;
     padding: 1rem;
   }
+  @media screen and (max-width: 800px) {
+   p {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+  }
+}
 </style>
 </style>

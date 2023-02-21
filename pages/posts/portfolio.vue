@@ -57,6 +57,13 @@ export default {
           note: "Made with Nuxt.js and Firebase.",
         },
         {
+          pageLink: "https://retrostation-9a405.web.app/",
+          appTitle: "Retro Station",
+          date: "December 2022",
+          gitHubLink: "https://github.com/katsup07/Retro-Station",
+          note: "Made with Next.js and Redux.",
+        },
+        {
           pageLink: "https://find-a-coach-f01cc.web.app/coaches",
           appTitle: "Find a Coach",
           date: "October 2022",
@@ -68,7 +75,7 @@ export default {
           appTitle: "Analogue Clock",
           date: "May 2022",
           gitHubLink: "https://github.com/katsup07/clock",
-          note: "Use the arrow keys to draw.",
+          note: "Keeps track of time.",
         },
         {
           pageLink: "https://katsup07.github.io/checkers/",

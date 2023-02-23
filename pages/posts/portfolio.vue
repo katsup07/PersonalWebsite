@@ -50,6 +50,13 @@ export default {
     return {
       tableRows: [
         {
+          pageLink: "https://next-js-weblog.vercel.app/",
+          appTitle: "Next.js Weblog",
+          date: "February 2023",
+          gitHubLink: "https://github.com/katsup07/NextJS-Blog",
+          note: "Created with Next.js, MongoDB, and Vercel.",
+        },
+        {
           pageLink: "https://worksplore.web.app/",
           appTitle: "This Webpage",
           date: "January 2023",

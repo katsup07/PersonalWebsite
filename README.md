@@ -1,4 +1,6 @@
 # blog-project
+## Try it out
+The site is live [here](https://worksplore.web.app/about).
 
 ## Build Setup
 

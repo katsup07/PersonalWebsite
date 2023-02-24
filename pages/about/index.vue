@@ -6,11 +6,11 @@
         <li><span class="field">Name:</span> Brett</li>
         <li><span class="field">Nationality:</span> Canadian</li>
         <li><span class="field">Japanese Residence Status:</span> Permanent Resident</li>
-        <li><span class="field">City:</span> Kawasaki</li>
+        <li><span class="field">City:</span> Kawasaki Japan</li>
         <div class="note">(Partial details are listed above for privacy reasons. Full details can be provided on request.)</div>
       </ul>
       <h2>Motivation</h2>
-       <p>I am a mathematics degree holder currently seeking Programming / Front End Web Development work. I have 3 years experience building programs as a hobby / university student. I am highly motivated and eager to develop new skills.</p>
+       <p>I am a mathematics degree holder currently seeking Programming / Front End Web Development work. I have 3 years experience(~3000 hours) building programs as a hobby / university student. I am highly motivated, a quick learner, and eager to develop new skills.</p>
       <h2>Background</h2>
       <p>I grew up in Canada and lived in Toronto until finishing highschool. I then moved to Vancouver and attended the <a href="https://www.ubc.ca/">University of British Columbia</a>, where I completed undergraduate studies in mathematics. Since then, I have been living and working as a teacher/curriculum-coordinator in Japan for the past 13 years.</p>
       <h2 class="category">Interests</h2>
@@ -31,7 +31,7 @@
         <li>Open to change, highly adaptable, and able to remain calm and relaxed, even in tense situations</li>
         <li>Self motivated, highly focused, and capable of working for long hours on a task or switching between various tasks at a time</li>
         <li>Able to learn from others, learn from mistakes, and seek out solutions to problems</li>
-        <li>Eager to take on new challenges and develop new skills</li>
+        <li>Eager to take on new challenges and grow</li>
       </ul>
     </div>
   </div>

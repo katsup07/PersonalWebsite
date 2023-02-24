@@ -28,12 +28,10 @@
           />
         </tbody>
       </table>
-      <AppCard>
-        <p>
-          <span class="bold">Note:</span> More React, Vue, Next.js, and Nuxt.js projects can be
-          found on my GitHub account <a href="https://github.com/katsup07">here</a>.
+        <p class="note">
+          ***<span class="bold">Note:</span> More React, Vue, Next.js, and Nuxt.js projects can be
+          found on my <a href="https://github.com/katsup07">GitHub account</a>.***
         </p>
-      </AppCard>
     </div>
   </section>
 </template>
@@ -220,6 +218,10 @@ tr:nth-child(even) th {
 
 .bold{
   font-weight: 900;
+}
+
+.note{
+  font-size: 0.9rem; 
 }
 
 @media screen and (max-width: 800px) {

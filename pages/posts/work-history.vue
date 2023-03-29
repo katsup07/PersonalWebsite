@@ -1,20 +1,20 @@
 <template>
     <div class="content-container">
-        <h1>Work History <img class="building-icon" src="~/static/assets/icons/briefcase-icon.svg"/></h1>
+        <h1>Work History / Work Related Experience <img class="building-icon" src="~/static/assets/icons/briefcase-icon.svg"/></h1>
       <section>
-      <h2>Student - Web Development</h2>
-      <div><span class="field">Years:</span> 2007-2009 & 2021-Present</div>
-      <div><span class="field">Positions: </span>Frontend Engineer</div>
-      <div><h3>Responsibilities:</h3>
+      <h2>Programming / Web Development</h2>
+      <div><span class="field">Years:</span> 2007-2009 & 2021-Present(~3000 hours)</div>
+      <div><h3>Skills:</h3>
       <ul>
         <li>Plan, create, and update UI/UX of websites</li>
         <li>Connect to backends for handling data and user authentication</li>
         <li>Use HTML, CSS, and frameworks such as React.js, Next.js, Vue.js, Nuxt.js to create websites with components</li>
         <li>Use of flux-like patterns to manage state in stores via Redux and Vuex</li>
-        <li>Basic routing, REST APIs, MVC, and responding to requests on a backend using Node.js, Express.js</li>
+        <li>Basic routing, REST APIs, MVC, and responding to requests on a backend using Node.js and Express.js</li>
         <li>Git / GitHub for version control</li>
         <li>Command line interfaces for managing projects</li>
         <li>Test, debug, and refactor code</li>
+        <li>Familiar with object oriented programming principles, data structures, and some common design patterns</li>
       </ul>
       </div>
       </section>

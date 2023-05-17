@@ -89,7 +89,6 @@
         <li>Served as a cultural ambassador and provided insights to students about different cultures</li>
         <li>Developed in students a passion for learning and an interest in learning about English and other cultures</li>
         <li>Assisted in planning and conducting activities for Sports Day</li>
-        <li>Attended weekly meetings and training sessions</li>
       </ul>
       </section>
     </div>

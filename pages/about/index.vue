@@ -6,7 +6,7 @@
         <li><span class="field">Name:</span> Brett</li>
         <li><span class="field">Nationality:</span> Canadian</li>
         <li><span class="field">Japanese Residence Status:</span> Permanent Resident</li>
-        <li><span class="field">City:</span> Kawasaki Japan</li>
+        <li><span class="field">City:</span> Tokyo, Japan</li>
         <div class="note">(Partial details are listed above for privacy reasons. Full details can be provided on request.)</div>
       </ul>
       <h2>Motivation</h2>

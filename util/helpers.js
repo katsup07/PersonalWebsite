@@ -27,6 +27,9 @@ export async function signUserInOrUp(mode, emailAndPasswordData) {
       : `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${fireBaseApiKey}`;
 
       try{
+      if(emailAndPasswordData.email !== 'luke@bear.com')
+        throw {error: { message: 'Only authorized admin users can login or sign up.'}};
+
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify(emailAndPasswordData),

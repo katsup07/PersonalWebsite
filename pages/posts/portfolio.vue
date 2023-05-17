@@ -48,6 +48,13 @@ export default {
     return {
       tableRows: [
         {
+          pageLink: "https://github.com/katsup07/gamer",
+          appTitle: "Online Game Store REST API(GitHub only)",
+          date: "March 2023",
+          gitHubLink: "https://github.com/katsup07/gamer",
+          note: "Created with Node.js, Express.js, and MongoDB.",
+        },
+        {
           pageLink: "https://next-js-weblog.vercel.app/",
           appTitle: "Next.js Weblog",
           date: "February 2023",

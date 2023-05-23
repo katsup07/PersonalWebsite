@@ -1,6 +1,8 @@
 # blog-project
 ## Try it out
 The site is live [here](https://worksplore.web.app/about).
+## Multilanguage Version
+A multiple language version of this repository that supports both English and Japanese can be found [here](https://github.com/katsup07/PersonalWebsiteMultiLanguage).
 
 ## Build Setup
 

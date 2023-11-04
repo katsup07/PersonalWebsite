@@ -48,6 +48,13 @@ export default {
     return {
       tableRows: [
         {
+          pageLink: "https://react-games-swart.vercel.app/",
+          appTitle: "React Games",
+          date: "May 2023",
+          gitHubLink: "https://github.com/katsup07/react-games",
+          note: "Created with React, React Query, chakra, zustand, Typescript, and Vercel.",
+        },
+        {
           pageLink: "https://github.com/katsup07/gamer",
           appTitle: "Online Game Store REST API(GitHub only)",
           date: "March 2023",

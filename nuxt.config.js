@@ -43,7 +43,7 @@ export default {
   },
    
   env: {
-      apiKey: 'AIzaSyBR4GaaaFuFgOsbdCeI4cTbuSubFpmHhcg',
+      apiKey: '',
     },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static'
